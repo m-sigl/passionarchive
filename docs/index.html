@@ -6,40 +6,75 @@
   <title>Passion Archive</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .button-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .nav-button {
-      background: none;
-      border: 1px solid #ffe8d6;
+    body {
+      background-color: #0d0d0d;
       color: #ffe8d6;
-      padding: 0.6rem 1.2rem;
-      font-size: 1rem;
-      border-radius: 4px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.3s ease, color 0.3s ease;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
     }
 
-    .nav-button:hover {
-      background-color: #ffe8d6;
-      color: #0d0d0d;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 5rem 2rem;
+    }
+
+    .entry-card {
+      background-color: #1a1a1a;
+      padding: 2rem;
+      border-left: 4px solid #ffe8d6;
+      border-radius: 6px;
+    }
+
+    .entry-card h2 {
+      font-size: 1.3rem;
+      color: #fddbb0;
+      margin-bottom: 1rem;
+    }
+
+    .entry-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #e8d8cc;
+    }
+
+    .page-title {
+      text-align: center;
+      padding-top: 4rem;
+    }
+
+    .page-title h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-title p {
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <main class="centered">
+  <div class="page-title">
     <h1>Passion Archive</h1>
     <p><em>Preservation, breath, memory</em></p>
+  </div>
 
-    <div class="button-row">
-      <a href="entry1_i_might_still_be_inside_her.html" class="nav-button">Entry 1: I Might Still Be Inside Her</a>
+  <div class="grid">
+    <div class="entry-card">
+      <h2>Entry 1: I Might Still Be Inside Her</h2>
+      <p>The last time I had sex with Maggie — the final collapse of something untamed, brilliant, fucked-up, and <em>fucking magnetic</em>. I walked through her door already swallowed by it. I didn’t talk. I didn’t pause. I didn’t care who was right or wrong — I just <strong>needed</strong>.</p>
+      <p>It wasn’t love. It wasn’t closure. It was <em>truth</em>. Or maybe <em>truth’s last scream</em>.</p>
     </div>
-  </main>
+
+    <div class="entry-card">
+      <h2>Reflection Shard: I Was Desired. I Was There.</h2>
+      <p>She wasn’t just a person. She was a node in my myth — a wildfire with limbs. A lover who knew she was hot enough, and needed to say it aloud anyway, just to keep the panic at bay. Maybe to trap me. Maybe to convince herself she could be safe.</p>
+      <p>We fucked like we were finishing a storm. She tried to move in too fast. I tried to carry too much. But for a time, it burned real. And it moved me. I didn’t imagine it. I lived it. And she knew.</p>
+    </div>
+  </div>
 </body>
 </html>
